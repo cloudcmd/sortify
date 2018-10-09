@@ -14,7 +14,7 @@ Sort directory content received by [readify](https://github.com/coderaiser/readi
 ## Install
 
 ```
-npm i @cloudcmd/sortify --save
+npm i @cloudcmd/sortify
 ```
 
 ## API
@@ -67,14 +67,6 @@ sortify({sort, order}, files);
 }]
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `sortify` can be used with:
-
-```js
-var sortify = require('@cloudcmd/sortify/legacy');
-
-```
 ## License
 
 MIT
