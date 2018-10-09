@@ -8,14 +8,16 @@ module.exports.sortifyFile = {
     date,
     owner: 0,
     mode: 33204,
+    type: 'file',
 };
 
 module.exports.testDir = {
     name: 'test',
-    size: 'dir',
+    size: 1024,
     date,
     owner: 0,
     mode: 33204,
+    type: 'directory',
 };
 
 module.exports.readifyFile = {
@@ -24,13 +26,15 @@ module.exports.readifyFile = {
     date,
     owner: 0,
     mode: 33204,
+    type: 'file',
 };
 
 module.exports.libDir = {
     name: 'lib',
-    size: 'dir',
+    size: 1024,
     date,
     owner: 0,
     mode: 33204,
+    type: 'directory',
 };
 
