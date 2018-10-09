@@ -35,12 +35,14 @@ const files = [{
     date: 2016-11-21T13:37:55.275Z,
     owner: 1000,
     mode: 33204,
+    type: 'file',
 }, {
     name: 'sortify.js',
     size: 4735,
     date: 2016-11-21T13:37:55.275Z,
     owner: 1000,
     mode: 33204,
+    type: 'file',
 }];
 
 const sort = 'size';
@@ -53,13 +55,15 @@ sortify({sort, order}, files);
     size: 4735,
     date: 2016-11-21T13:37:55.275Z,
     owner: 1000,
-    mode: 33204
+    mode: 33204,
+    type: 'file'
 }, {
     name: 'readify.js',
     size: 3735,
     date: 2016-11-21T13:37:55.275Z,
     owner: 1000,
-    mode: 33204
+    mode: 33204,
+    type: 'file'
 }]
 ```
 
