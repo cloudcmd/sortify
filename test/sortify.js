@@ -30,14 +30,6 @@ test('result: should be sorted by name folders then files', (t) => {
     t.end();
 });
 
-test('sortify: type: wrong', (t) => {
-    const type = 1;
-    const fn = () => sortify({type}, []);
-    
-    t.throws(fn, /type should be a string or not to be defined!/, 'should throw when type has wrong type');
-    t.end();
-});
-
 test('sortify: sort: name', (t) => {
     const files = [
         sortifyFile,
