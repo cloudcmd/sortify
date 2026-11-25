@@ -1,3 +1,16 @@
+2026.11.25, v3.0.0
+
+feature:
+- 27a0de6 @cloudcmd/sortify: supertape v13.6.2
+- bb08e12 @cloudcmd/sortify: migrate to ESM
+- ce1ac47 @cloudcmd/sortify: redrun v13.0.4
+- f99f667 @cloudcmd/sortify: nodemon v3.1.14
+- 82b8593 @cloudcmd/sortify: mkdirp v3.0.1
+- 6272389 @cloudcmd/sortify: eslint-plugin-node v11.1.0
+- 1ae0552 @cloudcmd/sortify: eslint v10.15.0
+- 808c330 @cloudcmd/sortify: coveralls: drop
+- 41d868a @cloudcmd/sortify: supertape v13.6.2
+
 2018.11.14, v2.0.1
 
 fix:
