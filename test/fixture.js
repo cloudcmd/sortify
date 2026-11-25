@@ -7,7 +7,7 @@ module.exports.sortifyFile = {
     size: 3538,
     date,
     owner: 0,
-    mode: 33204,
+    mode: 33_204,
     type: 'file',
 };
 
@@ -16,7 +16,7 @@ module.exports.testDir = {
     size: 1024,
     date,
     owner: 0,
-    mode: 33204,
+    mode: 33_204,
     type: 'directory',
 };
 
@@ -25,7 +25,7 @@ module.exports.readifyFile = {
     size: 1629,
     date,
     owner: 0,
-    mode: 33204,
+    mode: 33_204,
     type: 'file',
 };
 
@@ -34,7 +34,6 @@ module.exports.libDir = {
     size: 1024,
     date,
     owner: 0,
-    mode: 33204,
+    mode: 33_204,
     type: 'directory',
 };
-
