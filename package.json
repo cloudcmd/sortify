@@ -1,7 +1,7 @@
 {
   "name": "@cloudcmd/sortify",
   "version": "2.0.1",
-  "type": "commonjs",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "Sort directory content by name, size, date",
   "homepage": "http://github.com/cloudcmd/sortify",
@@ -11,8 +11,7 @@
   },
   "scripts": {
     "lint": "madrun lint",
-    "lint:eslint:lib": "madrun lint:eslint:lib",
-    "lint:eslint:test": "madrun lint:eslint:test",
+    "fix:lint": "madrun fix:lint",
     "report": "madrun report",
     "coverage": "madrun coverage",
     "test": "madrun test",
@@ -32,14 +31,19 @@
   "license": "MIT",
   "main": "lib/sortify.js",
   "engines": {
-    "node": ">=8.3.0"
+    "node": ">=22"
   },
   "devDependencies": {
-    "eslint": "^10.15.0",
-    "eslint-plugin-node": "^11.1.0",
-    "mkdirp": "^3.0.1",
-    "nodemon": "^3.1.14",
-    "redrun": "^13.0.4",
-    "supertape": "^13.6.2"
+    "eslint": "^10.0.3",
+    "eslint-plugin-putout": "^31.1.1",
+    "madrun": "^13.0.1",
+    "nodemon": "^3.1.0",
+    "putout": "^42.2.3",
+    "superc8": "^12.3.1",
+    "supertape": "^12.10.5",
+    "try-catch": "^4.0.9"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

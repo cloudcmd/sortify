@@ -1,8 +1,6 @@
-'use strict';
-
 const date = new Date('2017-01-12T09:01:35.288Z');
 
-module.exports.sortifyFile = {
+export const sortifyFile = {
     name: 'sortify.js',
     size: 3538,
     date,
@@ -11,7 +9,7 @@ module.exports.sortifyFile = {
     type: 'file',
 };
 
-module.exports.testDir = {
+export const testDir = {
     name: 'test',
     size: 1024,
     date,
@@ -20,7 +18,7 @@ module.exports.testDir = {
     type: 'directory',
 };
 
-module.exports.readifyFile = {
+export const readifyFile = {
     name: 'readify.js',
     size: 1629,
     date,
@@ -29,7 +27,7 @@ module.exports.readifyFile = {
     type: 'file',
 };
 
-module.exports.libDir = {
+export const libDir = {
     name: 'lib',
     size: 1024,
     date,

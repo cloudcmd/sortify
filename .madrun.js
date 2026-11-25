@@ -1,13 +1,11 @@
-'use strict';
+import {run} from 'madrun';
 
-const {run} = require('madrun');
-
-module.exports = {
+export default {
     'lint': () => 'putout .',
+    'fresh:lint': () => run('lint', '--fresh'),
+    'lint:fresh': () => run('lint', '--fresh'),
     'fix:lint': () => run('lint', '--fix'),
-    'lint:eslint:lib': () => 'eslint lib',
-    'lint:eslint:test': () => 'eslint -c .eslintrc.test test --no-eslintrc',
-    'report': () => 'c8 report --reporter=text-lcov | coveralls',
+    'report': () => 'c8 report --reporter=lcov',
     'coverage': () => 'c8 npm test',
     'test': () => 'tape test/*.js',
     'watch:coverage': () => run('watcher', 'npm run coverage'),

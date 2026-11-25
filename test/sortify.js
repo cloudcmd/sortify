@@ -1,15 +1,12 @@
-'use strict';
-
-const {tryCatch} = require('try-catch');
-const {test} = require('supertape');
-const sortify = require('..');
-
-const {
+import {tryCatch} from 'try-catch';
+import {test} from 'supertape';
+import {sortify} from '../lib/sortify.js';
+import {
     testDir,
     libDir,
     readifyFile,
     sortifyFile,
-} = require('./fixture');
+} from './fixture.js';
 
 test('result: should be sorted by name folders then files', (t) => {
     const files = [
@@ -124,12 +121,14 @@ test('sortify sort: size asc', (t) => {
 
 test('arguments: exception when no options', (t) => {
     const [error] = tryCatch(sortify);
+    
     t.equal(error.message, 'options should be an object!', 'should throw when no options');
     t.end();
 });
 
 test('arguments: exception when no files', (t) => {
     const [error] = tryCatch(sortify, {});
+    
     t.equal(error.message, 'files should be an array!', 'should throw when no files');
     t.end();
 });
@@ -144,6 +143,7 @@ test('sortify: options: order: wrong', (t) => {
 
 test('sortify: options: sort: wrong', (t) => {
     const [error] = tryCatch(sortify, {sort: 5}, []);
+    
     t.equal(error.message, 'sort should be a string!', 'should throw when sortBy not string');
     t.end();
 });

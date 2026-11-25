@@ -1,10 +1,11 @@
 *.swp
-*.log
 *.config.*
+*.log
 *.lock
 
 .*
 
-dist
+madrun.js
+
 test
 coverage
