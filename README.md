@@ -22,7 +22,7 @@ npm i @cloudcmd/sortify
 ### sortify(options, files)
 
 - **options** - `object` can contain:
-  - `sort` - sort by: name, size, date
+  - `sort` - sort by: name, size, date, time (sorted as date)
   - `order` - "asc" or "desc" for ascending and descending order (default: "asc")
 
 - **files** - `files list`

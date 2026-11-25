@@ -147,3 +147,61 @@ test('sortify: options: sort: wrong', (t) => {
     t.equal(error.message, 'sort should be a string!', 'should throw when sortBy not string');
     t.end();
 });
+
+test('sortify: sort: time: asc: as date', (t) => {
+    const early = {
+        ...readifyFile,
+        date: new Date('2017-01-12T09:01:35.288Z'),
+    };
+    
+    const late = {
+        ...sortifyFile,
+        date: new Date('2017-01-12T18:30:00.000Z'),
+    };
+    
+    const sort = 'time';
+    const result = sortify({sort}, [late, early]);
+    const expected = [early, late];
+    
+    t.deepEqual(result, expected);
+    t.end();
+});
+
+test('sortify: sort: time: desc: as date', (t) => {
+    const early = {
+        ...readifyFile,
+        date: new Date('2017-01-12T09:01:35.288Z'),
+    };
+    
+    const late = {
+        ...sortifyFile,
+        date: new Date('2017-01-12T18:30:00.000Z'),
+    };
+    
+    const sort = 'time';
+    const order = 'desc';
+    const result = sortify({sort, order}, [early, late]);
+    const expected = [late, early];
+    
+    t.deepEqual(result, expected);
+    t.end();
+});
+
+test('sortify: sort: time: directories first', (t) => {
+    const late = {
+        ...testDir,
+        date: new Date('2017-01-12T18:30:00.000Z'),
+    };
+    
+    const early = {
+        ...readifyFile,
+        date: new Date('2017-01-12T09:00:00.000Z'),
+    };
+    
+    const sort = 'time';
+    const result = sortify({sort}, [early, late]);
+    const expected = [late, early];
+    
+    t.deepEqual(result, expected);
+    t.end();
+});
